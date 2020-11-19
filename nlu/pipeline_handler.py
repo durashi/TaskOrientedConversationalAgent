@@ -23,5 +23,9 @@ additional_args = {'loglevel': None, 'model': 'models', 'stories': 'tests',
 
 
 for i in range(len(pipelines)):
-    os.system("rasa train nlu --config {} --out stack_models/{}".format(pipelines[i],pipelines[i]))
-    perform_nlu_cross_validation("{}".format(pipelines[i]),nlu_data,"results\{}".format(pipelines[i]),{})
+    try:
+        os.system("rasa train nlu --config {} --out stack_models/{}".format(pipelines[i],pipelines[i]))
+        perform_nlu_cross_validation("{}".format(pipelines[i]),nlu_data,"results\{}".format(pipelines[i]),{})
+    except OSError:
+        print("{} cannot find the model".format(pipelines[i]))
+        continue

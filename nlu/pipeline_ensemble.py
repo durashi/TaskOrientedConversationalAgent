@@ -52,11 +52,11 @@ def test_pipelines(test_data, model_path):
     return(tuple(test_result))
 
 
-def test_stack_pipelines(test_data):
+def test_stack_pipelines(test_data, output_file_path):
     model_folder_path = "stack_models\pipelines"
     test_result = []
     for sentence in (test_data):
-        result = model_stack_predict(model_folder_path, sentence)
+        result = model_stack_predict(model_folder_path, sentence,output_file_path)
         test_result.append(result['intent']['name'])
     print("test result  :",test_result)
     return(tuple(test_result))
@@ -68,12 +68,14 @@ def get_loaded_model_path(model_path):
     return loaded_model_path
 
 
-def model_stack_predict(model_folder_path, message):
+def model_stack_predict(model_folder_path, message, output_file_path):      
     models = glob.glob(model_folder_path + "\\*")
+    nlu_test_result_tofile = {"text": message}
     nlu_result = {"text": message}
     intent_ranking = []
     entities = []
-    for model in models:
+
+    for idx,model in enumerate(models):
         config = model.split("\\")[-1]
         print("config", config)
         model = max(glob.glob(model + "\\*"), key=os.path.getctime)
@@ -87,6 +89,8 @@ def model_stack_predict(model_folder_path, message):
         interpreter = Interpreter.load(model_path, component_builder=None)
         result = interpreter.parse(message)
         # print("result ", result)
+
+        nlu_test_result_tofile[str(idx)] = result['intent']
 
         for i in range(3):
             pred_intent = result["intent_ranking"][i]
@@ -130,7 +134,17 @@ def model_stack_predict(model_folder_path, message):
     ][0]
     nlu_result["entities"] = entities
     nlu_result["intent_ranking"] = intent_ranking
-    print("final   ###### :", nlu_result)
+    nlu_test_result_tofile['final intent'] = nlu_result["intent"]
+    try:
+        with open(output_file_path, 'a') as outfile:
+            for key in nlu_test_result_tofile.keys():
+                outfile.write("%s,%s\n"%(key,nlu_test_result_tofile[key]))
+            outfile.write("\n")
+    except (OSError, IOError) as e:
+        print("cannot open output file")
+    finally:
+        print("nlu_test_result_tofile :", nlu_test_result_tofile)
+        print("final   ###### :", nlu_result)
     return (nlu_result)
 
 

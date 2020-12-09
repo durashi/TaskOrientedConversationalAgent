@@ -1,0 +1,1680 @@
+target :{'theater': 'liberty'}
+prediction :{'city': 'liberty', 'state': 'liberty'}
+TP : set() 
+FP : {('state', 'liberty'), ('city', 'liberty')} 
+FN : {('theater', 'liberty')} 
+
+target :{'numberofpeople': '4', 'date': 'tomorrow'}
+prediction :{'numberofpeople': '4', 'date': 'tomorrow', 'moviename': '4 people'}
+TP : {('numberofpeople', '4'), ('date', 'tomorrow')} 
+FP : {('moviename', '4 people')} 
+FN : set() 
+
+target :{'moviename': 'infinity war', 'starttime': '4.30 p.m.'}
+prediction :{'moviename': 'infinity war'}
+TP : {('moviename', 'infinity war')} 
+FP : set() 
+FN : {('starttime', '4.30 p.m.')} 
+
+target :{'numberofpeople': '3', 'moviename': 'Zootopia'}
+prediction :{'numberofpeople': '3', 'moviename': 'zootopia'}
+TP : {('numberofpeople', '3')} 
+FP : {('moviename', 'zootopia')} 
+FN : {('moviename', 'Zootopia')} 
+
+target :{'genre': 'comedy', 'city': 'nyc'}
+prediction :{'genre': 'comedy', 'city': 'nyc'}
+TP : {('genre', 'comedy'), ('city', 'nyc')} 
+FP : set() 
+FN : set() 
+
+target :{'moviename': 'Deadpool ', 'city': 'hamilton'}
+prediction :{'moviename': 'Deadpool', 'city': 'hamilton'}
+TP : {('city', 'hamilton')} 
+FP : {('moviename', 'Deadpool')} 
+FN : {('moviename', 'Deadpool ')} 
+
+target :{'numberofpeople': '3', 'moviename': 'batman'}
+prediction :{'numberofpeople': '3', 'moviename': 'batman', 'city': 'los angeles'}
+TP : {('numberofpeople', '3'), ('moviename', 'batman')} 
+FP : {('city', 'los angeles')} 
+FN : set() 
+
+target :{'moviename': 'zootopis'}
+prediction :{'moviename': 'zootopis'}
+TP : {('moviename', 'zootopis')} 
+FP : set() 
+FN : set() 
+
+target :{'moviename': 'batman vs superman'}
+prediction :{'numberofpeople': '8', 'moviename': 'batman'}
+TP : set() 
+FP : {('numberofpeople', '8'), ('moviename', 'batman')} 
+FN : {('moviename', 'batman vs superman')} 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{'theater': 'amc pacific place 11'}
+prediction :{'theater_chain': 'amc pacific place 11', 'theater': 'amc pacific place 11'}
+TP : {('theater', 'amc pacific place 11')} 
+FP : {('theater_chain', 'amc pacific place 11')} 
+FN : set() 
+
+target :{'moviename': "brother's grimsby", 'theater': 'emagine ', 'city': 'Portland'}
+prediction :{'moviename': "the brother's grimsby", 'theater': 'emagine', 'city': 'Portland'}
+TP : {('city', 'Portland')} 
+FP : {('moviename', "the brother's grimsby"), ('theater', 'emagine')} 
+FN : {('moviename', "brother's grimsby"), ('theater', 'emagine ')} 
+
+target :{'numberofpeople': '4', 'city': 'chicago'}
+prediction :{'numberofpeople': '4', 'city': 'chicago', 'moviename': '4 people'}
+TP : {('numberofpeople', '4'), ('city', 'chicago')} 
+FP : {('moviename', '4 people')} 
+FN : set() 
+
+target :{'moviename': 'Foxtrot', 'city': 'seattle'}
+prediction :{'moviename': 'Foxtrot', 'city': 'seattle'}
+TP : {('moviename', 'Foxtrot'), ('city', 'seattle')} 
+FP : set() 
+FN : set() 
+
+target :{'city': 'nyc'}
+prediction :{'city': 'nyc'}
+TP : {('city', 'nyc')} 
+FP : set() 
+FN : set() 
+
+target :{'city': 'san francisco'}
+prediction :{'city': 'san francisco'}
+TP : {('city', 'san francisco')} 
+FP : set() 
+FN : set() 
+
+target :{'moviename': 'batman', 'city': 'miami'}
+prediction :{'video_format': 'batman', 'city': 'miami', 'moviename': 'batman'}
+TP : {('city', 'miami'), ('moviename', 'batman')} 
+FP : {('video_format', 'batman')} 
+FN : set() 
+
+target :{'city': 'dallas'}
+prediction :{'city': 'dallas'}
+TP : {('city', 'dallas')} 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{'starttime': '10'}
+prediction :{'city': 'nyc', 'starttime': 'around', 'zip': '10'}
+TP : set() 
+FP : {('starttime', 'around'), ('city', 'nyc'), ('zip', '10')} 
+FN : {('starttime', '10')} 
+
+target :{'genre': 'action', 'date': 'tomorrow'}
+prediction :{'date': 'tomorrow', 'genre': 'action'}
+TP : {('date', 'tomorrow'), ('genre', 'action')} 
+FP : set() 
+FN : set() 
+
+target :{'starttime': 'before 12pm'}
+prediction :{'starttime': 'before12pm'}
+TP : set() 
+FP : {('starttime', 'before12pm')} 
+FN : {('starttime', 'before 12pm')} 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{'critic_rating': 'Good'}
+TP : set() 
+FP : {('critic_rating', 'Good')} 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{'video_format': '3d', 'moviename': 'Avengers', 'city': 'atlanta'}
+prediction :{'video_format': '3d', 'moviename': 'Avengers', 'city': 'atlanta'}
+TP : {('moviename', 'Avengers'), ('video_format', '3d'), ('city', 'atlanta')} 
+FP : set() 
+FN : set() 
+
+target :{'city': 'nyc'}
+prediction :{'city': 'nyc'}
+TP : {('city', 'nyc')} 
+FP : set() 
+FN : set() 
+
+target :{'moviename': 'DeadPool'}
+prediction :{'moviename': 'DeadPool'}
+TP : {('moviename', 'DeadPool')} 
+FP : set() 
+FN : set() 
+
+target :{'starttime': 'DONT CARE'}
+prediction :{'theater': 'any'}
+TP : set() 
+FP : {('theater', 'any')} 
+FN : {('starttime', 'DONT CARE')} 
+
+target :{'starttime': '4.00 pm', 'moviename': 'Antman', 'numberofpeople': '2'}
+prediction :{'numberofpeople': '2'}
+TP : {('numberofpeople', '2')} 
+FP : set() 
+FN : {('moviename', 'Antman'), ('starttime', '4.00 pm')} 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{'numberofpeople': '3', 'moviename': 'batman'}
+prediction :{'numberofpeople': '3', 'moviename': 'batman'}
+TP : {('numberofpeople', '3'), ('moviename', 'batman')} 
+FP : set() 
+FN : set() 
+
+target :{'numberofpeople': '7', 'moviename': 'magnificent', 'starttime': '8.00 pm'}
+prediction :{'numberofpeople': '7'}
+TP : {('numberofpeople', '7')} 
+FP : set() 
+FN : {('moviename', 'magnificent'), ('starttime', '8.00 pm')} 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{'distanceconstraints': 'me'}
+TP : set() 
+FP : {('distanceconstraints', 'me')} 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{'moviename': 'Black swan'}
+prediction :{'moviename': 'the Black swan'}
+TP : set() 
+FP : {('moviename', 'the Black swan')} 
+FN : {('moviename', 'Black swan')} 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{'moviename': 'bird box', 'city': 'portland'}
+prediction :{'theater': 'box', 'city': 'portland'}
+TP : {('city', 'portland')} 
+FP : {('theater', 'box')} 
+FN : {('moviename', 'bird box')} 
+
+target :{'moviename': 'quiet place', 'starttime': '12.00 pm', 'theater': 'los angeles'}
+prediction :{'theater': 'place', 'starttime': '12:00', 'city': 'los angeles'}
+TP : set() 
+FP : {('starttime', '12:00'), ('theater', 'place'), ('city', 'los angeles')} 
+FN : {('starttime', '12.00 pm'), ('moviename', 'quiet place'), ('theater', 'los angeles')} 
+
+target :{}
+prediction :{'critic_rating': 'nice'}
+TP : set() 
+FP : {('critic_rating', 'nice')} 
+FN : set() 
+
+target :{'theater': 'liberty'}
+prediction :{'state': 'liberty'}
+TP : set() 
+FP : {('state', 'liberty')} 
+FN : {('theater', 'liberty')} 
+
+target :{}
+prediction :{'critic_rating': 'good'}
+TP : set() 
+FP : {('critic_rating', 'good')} 
+FN : set() 
+
+target :{'starttime': '8.00 pm', 'date': 'tomorrow'}
+prediction :{'date': 'tomorrow'}
+TP : {('date', 'tomorrow')} 
+FP : set() 
+FN : {('starttime', '8.00 pm')} 
+
+target :{'starttime': 'DONT CARE'}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : {('starttime', 'DONT CARE')} 
+
+target :{'moviename': 'Dealpool', 'theater': 'liberty'}
+prediction :{'theater': 'liberty', 'moviename': 'Deadpool'}
+TP : {('theater', 'liberty')} 
+FP : {('moviename', 'Deadpool')} 
+FN : {('moviename', 'Dealpool')} 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{'critic_rating': 'Good'}
+TP : set() 
+FP : {('critic_rating', 'Good')} 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{'genre': 'horror', 'city': 'san francisco'}
+prediction :{'genre': 'horror', 'city': 'san francisco'}
+TP : {('city', 'san francisco'), ('genre', 'horror')} 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{'distanceconstraints': 'time'}
+TP : set() 
+FP : {('distanceconstraints', 'time')} 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{'video_format': '3d'}
+prediction :{'video_format': '3d'}
+TP : {('video_format', '3d')} 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{'numberofpeople': '2', 'theater': 'emagine'}
+prediction :{'numberofpeople': '2', 'theater': 'emagine'}
+TP : {('numberofpeople', '2'), ('theater', 'emagine')} 
+FP : set() 
+FN : set() 
+
+target :{'date': 'tomorrow'}
+prediction :{'date': 'tomorrow'}
+TP : {('date', 'tomorrow')} 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{'starttime': '4 p.m.'}
+prediction :{'numberofpeople': '4'}
+TP : set() 
+FP : {('numberofpeople', '4')} 
+FN : {('starttime', '4 p.m.')} 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{'genre': 'kids'}
+TP : set() 
+FP : {('genre', 'kids')} 
+FN : set() 
+
+target :{'moviename': 'avengers'}
+prediction :{'moviename': 'avengers'}
+TP : {('moviename', 'avengers')} 
+FP : set() 
+FN : set() 
+
+target :{'theater': 'liberty'}
+prediction :{'city': 'liberty', 'state': 'liberty'}
+TP : set() 
+FP : {('state', 'liberty'), ('city', 'liberty')} 
+FN : {('theater', 'liberty')} 
+
+target :{'numberofpeople': '4', 'date': 'tomorrow'}
+prediction :{'numberofpeople': '4', 'date': 'tomorrow', 'moviename': '4 people'}
+TP : {('numberofpeople', '4'), ('date', 'tomorrow')} 
+FP : {('moviename', '4 people')} 
+FN : set() 
+
+target :{'moviename': 'infinity war', 'starttime': '4.30 p.m.'}
+prediction :{'moviename': 'infinity war'}
+TP : {('moviename', 'infinity war')} 
+FP : set() 
+FN : {('starttime', '4.30 p.m.')} 
+
+target :{'numberofpeople': '3', 'moviename': 'Zootopia'}
+prediction :{'numberofpeople': '3', 'moviename': 'zootopia'}
+TP : {('numberofpeople', '3')} 
+FP : {('moviename', 'zootopia')} 
+FN : {('moviename', 'Zootopia')} 
+
+target :{'genre': 'comedy', 'city': 'nyc'}
+prediction :{'genre': 'comedy', 'city': 'nyc'}
+TP : {('genre', 'comedy'), ('city', 'nyc')} 
+FP : set() 
+FN : set() 
+
+target :{'moviename': 'Deadpool ', 'city': 'hamilton'}
+prediction :{'moviename': 'Deadpool', 'city': 'hamilton'}
+TP : {('city', 'hamilton')} 
+FP : {('moviename', 'Deadpool')} 
+FN : {('moviename', 'Deadpool ')} 
+
+target :{'numberofpeople': '3', 'moviename': 'batman'}
+prediction :{'numberofpeople': '3', 'moviename': 'batman', 'city': 'los angeles'}
+TP : {('numberofpeople', '3'), ('moviename', 'batman')} 
+FP : {('city', 'los angeles')} 
+FN : set() 
+
+target :{'moviename': 'zootopis'}
+prediction :{'moviename': 'zootopis'}
+TP : {('moviename', 'zootopis')} 
+FP : set() 
+FN : set() 
+
+target :{'moviename': 'batman vs superman'}
+prediction :{'numberofpeople': '8', 'moviename': 'batman'}
+TP : set() 
+FP : {('numberofpeople', '8'), ('moviename', 'batman')} 
+FN : {('moviename', 'batman vs superman')} 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{'theater': 'amc pacific place 11'}
+prediction :{'theater_chain': 'amc pacific place 11', 'theater': 'amc pacific place 11'}
+TP : {('theater', 'amc pacific place 11')} 
+FP : {('theater_chain', 'amc pacific place 11')} 
+FN : set() 
+
+target :{'moviename': "brother's grimsby", 'theater': 'emagine ', 'city': 'Portland'}
+prediction :{'moviename': "the brother's grimsby", 'theater': 'emagine', 'city': 'Portland'}
+TP : {('city', 'Portland')} 
+FP : {('moviename', "the brother's grimsby"), ('theater', 'emagine')} 
+FN : {('moviename', "brother's grimsby"), ('theater', 'emagine ')} 
+
+target :{'numberofpeople': '4', 'city': 'chicago'}
+prediction :{'numberofpeople': '4', 'city': 'chicago', 'moviename': '4 people'}
+TP : {('numberofpeople', '4'), ('city', 'chicago')} 
+FP : {('moviename', '4 people')} 
+FN : set() 
+
+target :{'moviename': 'Foxtrot', 'city': 'seattle'}
+prediction :{'moviename': 'Foxtrot', 'city': 'seattle'}
+TP : {('moviename', 'Foxtrot'), ('city', 'seattle')} 
+FP : set() 
+FN : set() 
+
+target :{'city': 'nyc'}
+prediction :{'city': 'nyc'}
+TP : {('city', 'nyc')} 
+FP : set() 
+FN : set() 
+
+target :{'city': 'san francisco'}
+prediction :{'city': 'san francisco'}
+TP : {('city', 'san francisco')} 
+FP : set() 
+FN : set() 
+
+target :{'moviename': 'batman', 'city': 'miami'}
+prediction :{'video_format': 'batman', 'city': 'miami', 'moviename': 'batman'}
+TP : {('city', 'miami'), ('moviename', 'batman')} 
+FP : {('video_format', 'batman')} 
+FN : set() 
+
+target :{'city': 'dallas'}
+prediction :{'city': 'dallas'}
+TP : {('city', 'dallas')} 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{'starttime': '10'}
+prediction :{'city': 'nyc', 'starttime': 'around', 'zip': '10'}
+TP : set() 
+FP : {('starttime', 'around'), ('city', 'nyc'), ('zip', '10')} 
+FN : {('starttime', '10')} 
+
+target :{'genre': 'action', 'date': 'tomorrow'}
+prediction :{'date': 'tomorrow', 'genre': 'action'}
+TP : {('date', 'tomorrow'), ('genre', 'action')} 
+FP : set() 
+FN : set() 
+
+target :{'starttime': 'before 12pm'}
+prediction :{'starttime': 'before12pm'}
+TP : set() 
+FP : {('starttime', 'before12pm')} 
+FN : {('starttime', 'before 12pm')} 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{'critic_rating': 'Good'}
+TP : set() 
+FP : {('critic_rating', 'Good')} 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{'video_format': '3d', 'moviename': 'Avengers', 'city': 'atlanta'}
+prediction :{'video_format': '3d', 'moviename': 'Avengers', 'city': 'atlanta'}
+TP : {('moviename', 'Avengers'), ('video_format', '3d'), ('city', 'atlanta')} 
+FP : set() 
+FN : set() 
+
+target :{'city': 'nyc'}
+prediction :{'city': 'nyc'}
+TP : {('city', 'nyc')} 
+FP : set() 
+FN : set() 
+
+target :{'moviename': 'DeadPool'}
+prediction :{'moviename': 'DeadPool'}
+TP : {('moviename', 'DeadPool')} 
+FP : set() 
+FN : set() 
+
+target :{'starttime': 'DONT CARE'}
+prediction :{'theater': 'any'}
+TP : set() 
+FP : {('theater', 'any')} 
+FN : {('starttime', 'DONT CARE')} 
+
+target :{'starttime': '4.00 pm', 'moviename': 'Antman', 'numberofpeople': '2'}
+prediction :{'numberofpeople': '2'}
+TP : {('numberofpeople', '2')} 
+FP : set() 
+FN : {('moviename', 'Antman'), ('starttime', '4.00 pm')} 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{'numberofpeople': '3', 'moviename': 'batman'}
+prediction :{'numberofpeople': '3', 'moviename': 'batman'}
+TP : {('numberofpeople', '3'), ('moviename', 'batman')} 
+FP : set() 
+FN : set() 
+
+target :{'numberofpeople': '7', 'moviename': 'magnificent', 'starttime': '8.00 pm'}
+prediction :{'numberofpeople': '7'}
+TP : {('numberofpeople', '7')} 
+FP : set() 
+FN : {('moviename', 'magnificent'), ('starttime', '8.00 pm')} 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{'distanceconstraints': 'me'}
+TP : set() 
+FP : {('distanceconstraints', 'me')} 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{'moviename': 'Black swan'}
+prediction :{'moviename': 'the Black swan'}
+TP : set() 
+FP : {('moviename', 'the Black swan')} 
+FN : {('moviename', 'Black swan')} 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{'moviename': 'bird box', 'city': 'portland'}
+prediction :{'theater': 'box', 'city': 'portland'}
+TP : {('city', 'portland')} 
+FP : {('theater', 'box')} 
+FN : {('moviename', 'bird box')} 
+
+target :{'moviename': 'quiet place', 'starttime': '12.00 pm', 'theater': 'los angeles'}
+prediction :{'theater': 'place', 'starttime': '12:00', 'city': 'los angeles'}
+TP : set() 
+FP : {('starttime', '12:00'), ('theater', 'place'), ('city', 'los angeles')} 
+FN : {('starttime', '12.00 pm'), ('moviename', 'quiet place'), ('theater', 'los angeles')} 
+
+target :{}
+prediction :{'critic_rating': 'nice'}
+TP : set() 
+FP : {('critic_rating', 'nice')} 
+FN : set() 
+
+target :{'theater': 'liberty'}
+prediction :{'state': 'liberty'}
+TP : set() 
+FP : {('state', 'liberty')} 
+FN : {('theater', 'liberty')} 
+
+target :{}
+prediction :{'critic_rating': 'good'}
+TP : set() 
+FP : {('critic_rating', 'good')} 
+FN : set() 
+
+target :{'starttime': '8.00 pm', 'date': 'tomorrow'}
+prediction :{'date': 'tomorrow'}
+TP : {('date', 'tomorrow')} 
+FP : set() 
+FN : {('starttime', '8.00 pm')} 
+
+target :{'starttime': 'DONT CARE'}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : {('starttime', 'DONT CARE')} 
+
+target :{'moviename': 'Dealpool', 'theater': 'liberty'}
+prediction :{'theater': 'liberty', 'moviename': 'Deadpool'}
+TP : {('theater', 'liberty')} 
+FP : {('moviename', 'Deadpool')} 
+FN : {('moviename', 'Dealpool')} 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{'critic_rating': 'Good'}
+TP : set() 
+FP : {('critic_rating', 'Good')} 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{'genre': 'horror', 'city': 'san francisco'}
+prediction :{'genre': 'horror', 'city': 'san francisco'}
+TP : {('city', 'san francisco'), ('genre', 'horror')} 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{'distanceconstraints': 'time'}
+TP : set() 
+FP : {('distanceconstraints', 'time')} 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{'video_format': '3d'}
+prediction :{'video_format': '3d'}
+TP : {('video_format', '3d')} 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{'numberofpeople': '2', 'theater': 'emagine'}
+prediction :{'numberofpeople': '2', 'theater': 'emagine'}
+TP : {('numberofpeople', '2'), ('theater', 'emagine')} 
+FP : set() 
+FN : set() 
+
+target :{'date': 'tomorrow'}
+prediction :{'date': 'tomorrow'}
+TP : {('date', 'tomorrow')} 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{'starttime': '4 p.m.'}
+prediction :{'numberofpeople': '4'}
+TP : set() 
+FP : {('numberofpeople', '4')} 
+FN : {('starttime', '4 p.m.')} 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{'genre': 'kids'}
+TP : set() 
+FP : {('genre', 'kids')} 
+FN : set() 
+
+target :{'moviename': 'avengers'}
+prediction :{'moviename': 'avengers'}
+TP : {('moviename', 'avengers')} 
+FP : set() 
+FN : set() 
+
+target :{'theater': 'liberty'}
+prediction :{'city': 'liberty', 'state': 'liberty'}
+TP : set() 
+FP : {('state', 'liberty'), ('city', 'liberty')} 
+FN : {('theater', 'liberty')} 
+
+target :{'numberofpeople': '4', 'date': 'tomorrow'}
+prediction :{'numberofpeople': '4', 'date': 'tomorrow', 'moviename': '4 people'}
+TP : {('numberofpeople', '4'), ('date', 'tomorrow')} 
+FP : {('moviename', '4 people')} 
+FN : set() 
+
+target :{'moviename': 'infinity war', 'starttime': '4.30 p.m.'}
+prediction :{'moviename': 'infinity war'}
+TP : {('moviename', 'infinity war')} 
+FP : set() 
+FN : {('starttime', '4.30 p.m.')} 
+
+target :{'numberofpeople': '3', 'moviename': 'Zootopia'}
+prediction :{'numberofpeople': '3', 'moviename': 'zootopia'}
+TP : {('numberofpeople', '3')} 
+FP : {('moviename', 'zootopia')} 
+FN : {('moviename', 'Zootopia')} 
+
+target :{'genre': 'comedy', 'city': 'nyc'}
+prediction :{'genre': 'comedy', 'city': 'nyc'}
+TP : {('genre', 'comedy'), ('city', 'nyc')} 
+FP : set() 
+FN : set() 
+
+target :{'moviename': 'Deadpool ', 'city': 'hamilton'}
+prediction :{'moviename': 'Deadpool', 'city': 'hamilton'}
+TP : {('city', 'hamilton')} 
+FP : {('moviename', 'Deadpool')} 
+FN : {('moviename', 'Deadpool ')} 
+
+target :{'numberofpeople': '3', 'moviename': 'batman'}
+prediction :{'numberofpeople': '3', 'moviename': 'batman', 'city': 'los angeles'}
+TP : {('numberofpeople', '3'), ('moviename', 'batman')} 
+FP : {('city', 'los angeles')} 
+FN : set() 
+
+target :{'moviename': 'zootopis'}
+prediction :{'moviename': 'zootopis'}
+TP : {('moviename', 'zootopis')} 
+FP : set() 
+FN : set() 
+
+target :{'moviename': 'batman vs superman'}
+prediction :{'numberofpeople': '8', 'moviename': 'batman'}
+TP : set() 
+FP : {('numberofpeople', '8'), ('moviename', 'batman')} 
+FN : {('moviename', 'batman vs superman')} 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{'theater': 'amc pacific place 11'}
+prediction :{'theater_chain': 'amc pacific place 11', 'theater': 'amc pacific place 11'}
+TP : {('theater', 'amc pacific place 11')} 
+FP : {('theater_chain', 'amc pacific place 11')} 
+FN : set() 
+
+target :{'moviename': "brother's grimsby", 'theater': 'emagine ', 'city': 'Portland'}
+prediction :{'moviename': "the brother's grimsby", 'theater': 'emagine', 'city': 'Portland'}
+TP : {('city', 'Portland')} 
+FP : {('moviename', "the brother's grimsby"), ('theater', 'emagine')} 
+FN : {('moviename', "brother's grimsby"), ('theater', 'emagine ')} 
+
+target :{'numberofpeople': '4', 'city': 'chicago'}
+prediction :{'numberofpeople': '4', 'city': 'chicago', 'moviename': '4 people'}
+TP : {('numberofpeople', '4'), ('city', 'chicago')} 
+FP : {('moviename', '4 people')} 
+FN : set() 
+
+target :{'moviename': 'Foxtrot', 'city': 'seattle'}
+prediction :{'moviename': 'Foxtrot', 'city': 'seattle'}
+TP : {('moviename', 'Foxtrot'), ('city', 'seattle')} 
+FP : set() 
+FN : set() 
+
+target :{'city': 'nyc'}
+prediction :{'city': 'nyc'}
+TP : {('city', 'nyc')} 
+FP : set() 
+FN : set() 
+
+target :{'city': 'san francisco'}
+prediction :{'city': 'san francisco'}
+TP : {('city', 'san francisco')} 
+FP : set() 
+FN : set() 
+
+target :{'moviename': 'batman', 'city': 'miami'}
+prediction :{'video_format': 'batman', 'city': 'miami', 'moviename': 'batman'}
+TP : {('city', 'miami'), ('moviename', 'batman')} 
+FP : {('video_format', 'batman')} 
+FN : set() 
+
+target :{'city': 'dallas'}
+prediction :{'city': 'dallas'}
+TP : {('city', 'dallas')} 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{'starttime': '10'}
+prediction :{'city': 'nyc', 'starttime': 'around', 'zip': '10'}
+TP : set() 
+FP : {('starttime', 'around'), ('city', 'nyc'), ('zip', '10')} 
+FN : {('starttime', '10')} 
+
+target :{'genre': 'action', 'date': 'tomorrow'}
+prediction :{'date': 'tomorrow', 'genre': 'action'}
+TP : {('date', 'tomorrow'), ('genre', 'action')} 
+FP : set() 
+FN : set() 
+
+target :{'starttime': 'before 12pm'}
+prediction :{'starttime': 'before12pm'}
+TP : set() 
+FP : {('starttime', 'before12pm')} 
+FN : {('starttime', 'before 12pm')} 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{'critic_rating': 'Good'}
+TP : set() 
+FP : {('critic_rating', 'Good')} 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{'video_format': '3d', 'moviename': 'Avengers', 'city': 'atlanta'}
+prediction :{'video_format': '3d', 'moviename': 'Avengers', 'city': 'atlanta'}
+TP : {('moviename', 'Avengers'), ('video_format', '3d'), ('city', 'atlanta')} 
+FP : set() 
+FN : set() 
+
+target :{'city': 'nyc'}
+prediction :{'city': 'nyc'}
+TP : {('city', 'nyc')} 
+FP : set() 
+FN : set() 
+
+target :{'moviename': 'DeadPool'}
+prediction :{'moviename': 'DeadPool'}
+TP : {('moviename', 'DeadPool')} 
+FP : set() 
+FN : set() 
+
+target :{'starttime': 'DONT CARE'}
+prediction :{'theater': 'any'}
+TP : set() 
+FP : {('theater', 'any')} 
+FN : {('starttime', 'DONT CARE')} 
+
+target :{'starttime': '4.00 pm', 'moviename': 'Antman', 'numberofpeople': '2'}
+prediction :{'numberofpeople': '2'}
+TP : {('numberofpeople', '2')} 
+FP : set() 
+FN : {('moviename', 'Antman'), ('starttime', '4.00 pm')} 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{'numberofpeople': '3', 'moviename': 'batman'}
+prediction :{'numberofpeople': '3', 'moviename': 'batman'}
+TP : {('numberofpeople', '3'), ('moviename', 'batman')} 
+FP : set() 
+FN : set() 
+
+target :{'numberofpeople': '7', 'moviename': 'magnificent', 'starttime': '8.00 pm'}
+prediction :{'numberofpeople': '7'}
+TP : {('numberofpeople', '7')} 
+FP : set() 
+FN : {('moviename', 'magnificent'), ('starttime', '8.00 pm')} 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{'distanceconstraints': 'me'}
+TP : set() 
+FP : {('distanceconstraints', 'me')} 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{'moviename': 'Black swan'}
+prediction :{'moviename': 'the Black swan'}
+TP : set() 
+FP : {('moviename', 'the Black swan')} 
+FN : {('moviename', 'Black swan')} 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{'moviename': 'bird box', 'city': 'portland'}
+prediction :{'theater': 'box', 'city': 'portland'}
+TP : {('city', 'portland')} 
+FP : {('theater', 'box')} 
+FN : {('moviename', 'bird box')} 
+
+target :{'moviename': 'quiet place', 'starttime': '12.00 pm', 'theater': 'los angeles'}
+prediction :{'theater': 'place', 'starttime': '12:00', 'city': 'los angeles'}
+TP : set() 
+FP : {('starttime', '12:00'), ('theater', 'place'), ('city', 'los angeles')} 
+FN : {('starttime', '12.00 pm'), ('moviename', 'quiet place'), ('theater', 'los angeles')} 
+
+target :{}
+prediction :{'critic_rating': 'nice'}
+TP : set() 
+FP : {('critic_rating', 'nice')} 
+FN : set() 
+
+target :{'theater': 'liberty'}
+prediction :{'state': 'liberty'}
+TP : set() 
+FP : {('state', 'liberty')} 
+FN : {('theater', 'liberty')} 
+
+target :{}
+prediction :{'critic_rating': 'good'}
+TP : set() 
+FP : {('critic_rating', 'good')} 
+FN : set() 
+
+target :{'starttime': '8.00 pm', 'date': 'tomorrow'}
+prediction :{'date': 'tomorrow'}
+TP : {('date', 'tomorrow')} 
+FP : set() 
+FN : {('starttime', '8.00 pm')} 
+
+target :{'starttime': 'DONT CARE'}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : {('starttime', 'DONT CARE')} 
+
+target :{'moviename': 'Dealpool', 'theater': 'liberty'}
+prediction :{'theater': 'liberty', 'moviename': 'Deadpool'}
+TP : {('theater', 'liberty')} 
+FP : {('moviename', 'Deadpool')} 
+FN : {('moviename', 'Dealpool')} 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{'critic_rating': 'Good'}
+TP : set() 
+FP : {('critic_rating', 'Good')} 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{'genre': 'horror', 'city': 'san francisco'}
+prediction :{'genre': 'horror', 'city': 'san francisco'}
+TP : {('city', 'san francisco'), ('genre', 'horror')} 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{'distanceconstraints': 'time'}
+TP : set() 
+FP : {('distanceconstraints', 'time')} 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{'video_format': '3d'}
+prediction :{'video_format': '3d'}
+TP : {('video_format', '3d')} 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{'numberofpeople': '2', 'theater': 'emagine'}
+prediction :{'numberofpeople': '2', 'theater': 'emagine'}
+TP : {('numberofpeople', '2'), ('theater', 'emagine')} 
+FP : set() 
+FN : set() 
+
+target :{'date': 'tomorrow'}
+prediction :{'date': 'tomorrow'}
+TP : {('date', 'tomorrow')} 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{'starttime': '4 p.m.'}
+prediction :{'numberofpeople': '4'}
+TP : set() 
+FP : {('numberofpeople', '4')} 
+FN : {('starttime', '4 p.m.')} 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{'genre': 'kids'}
+TP : set() 
+FP : {('genre', 'kids')} 
+FN : set() 
+
+target :{'moviename': 'avengers'}
+prediction :{'moviename': 'avengers'}
+TP : {('moviename', 'avengers')} 
+FP : set() 
+FN : set() 
+
+target :{'theater': 'liberty'}
+prediction :{'city': 'liberty', 'state': 'liberty'}
+TP : set() 
+FP : {('state', 'liberty'), ('city', 'liberty')} 
+FN : {('theater', 'liberty')} 
+
+target :{'numberofpeople': '4', 'date': 'tomorrow'}
+prediction :{'numberofpeople': '4', 'date': 'tomorrow', 'moviename': '4 people'}
+TP : {('numberofpeople', '4'), ('date', 'tomorrow')} 
+FP : {('moviename', '4 people')} 
+FN : set() 
+
+target :{'moviename': 'infinity war', 'starttime': '4.30 p.m.'}
+prediction :{'moviename': 'infinity war'}
+TP : {('moviename', 'infinity war')} 
+FP : set() 
+FN : {('starttime', '4.30 p.m.')} 
+
+target :{'numberofpeople': '3', 'moviename': 'Zootopia'}
+prediction :{'numberofpeople': '3', 'moviename': 'zootopia'}
+TP : {('numberofpeople', '3')} 
+FP : {('moviename', 'zootopia')} 
+FN : {('moviename', 'Zootopia')} 
+
+target :{'genre': 'comedy', 'city': 'nyc'}
+prediction :{'genre': 'comedy', 'city': 'nyc'}
+TP : {('genre', 'comedy'), ('city', 'nyc')} 
+FP : set() 
+FN : set() 
+
+target :{'moviename': 'Deadpool ', 'city': 'hamilton'}
+prediction :{'moviename': 'Deadpool', 'city': 'hamilton'}
+TP : {('city', 'hamilton')} 
+FP : {('moviename', 'Deadpool')} 
+FN : {('moviename', 'Deadpool ')} 
+
+target :{'numberofpeople': '3', 'moviename': 'batman'}
+prediction :{'numberofpeople': '3', 'moviename': 'batman', 'city': 'los angeles'}
+TP : {('numberofpeople', '3'), ('moviename', 'batman')} 
+FP : {('city', 'los angeles')} 
+FN : set() 
+
+target :{'moviename': 'zootopis'}
+prediction :{'moviename': 'zootopis'}
+TP : {('moviename', 'zootopis')} 
+FP : set() 
+FN : set() 
+
+target :{'moviename': 'batman vs superman'}
+prediction :{'numberofpeople': '8', 'moviename': 'batman'}
+TP : set() 
+FP : {('numberofpeople', '8'), ('moviename', 'batman')} 
+FN : {('moviename', 'batman vs superman')} 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{'theater': 'amc pacific place 11'}
+prediction :{'theater_chain': 'amc pacific place 11', 'theater': 'amc pacific place 11'}
+TP : {('theater', 'amc pacific place 11')} 
+FP : {('theater_chain', 'amc pacific place 11')} 
+FN : set() 
+
+target :{'moviename': "brother's grimsby", 'theater': 'emagine ', 'city': 'Portland'}
+prediction :{'moviename': "the brother's grimsby", 'theater': 'emagine', 'city': 'Portland'}
+TP : {('city', 'Portland')} 
+FP : {('moviename', "the brother's grimsby"), ('theater', 'emagine')} 
+FN : {('moviename', "brother's grimsby"), ('theater', 'emagine ')} 
+
+target :{'numberofpeople': '4', 'city': 'chicago'}
+prediction :{'numberofpeople': '4', 'city': 'chicago', 'moviename': '4 people'}
+TP : {('numberofpeople', '4'), ('city', 'chicago')} 
+FP : {('moviename', '4 people')} 
+FN : set() 
+
+target :{'moviename': 'Foxtrot', 'city': 'seattle'}
+prediction :{'moviename': 'Foxtrot', 'city': 'seattle'}
+TP : {('moviename', 'Foxtrot'), ('city', 'seattle')} 
+FP : set() 
+FN : set() 
+
+target :{'city': 'nyc'}
+prediction :{'city': 'nyc'}
+TP : {('city', 'nyc')} 
+FP : set() 
+FN : set() 
+
+target :{'city': 'san francisco'}
+prediction :{'city': 'san francisco'}
+TP : {('city', 'san francisco')} 
+FP : set() 
+FN : set() 
+
+target :{'moviename': 'batman', 'city': 'miami'}
+prediction :{'video_format': 'batman', 'city': 'miami', 'moviename': 'batman'}
+TP : {('city', 'miami'), ('moviename', 'batman')} 
+FP : {('video_format', 'batman')} 
+FN : set() 
+
+target :{'city': 'dallas'}
+prediction :{'city': 'dallas'}
+TP : {('city', 'dallas')} 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{'starttime': '10'}
+prediction :{'city': 'nyc', 'starttime': 'around', 'zip': '10'}
+TP : set() 
+FP : {('starttime', 'around'), ('city', 'nyc'), ('zip', '10')} 
+FN : {('starttime', '10')} 
+
+target :{'genre': 'action', 'date': 'tomorrow'}
+prediction :{'date': 'tomorrow', 'genre': 'action'}
+TP : {('date', 'tomorrow'), ('genre', 'action')} 
+FP : set() 
+FN : set() 
+
+target :{'starttime': 'before 12pm'}
+prediction :{'starttime': 'before12pm'}
+TP : set() 
+FP : {('starttime', 'before12pm')} 
+FN : {('starttime', 'before 12pm')} 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{'critic_rating': 'Good'}
+TP : set() 
+FP : {('critic_rating', 'Good')} 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{'video_format': '3d', 'moviename': 'Avengers', 'city': 'atlanta'}
+prediction :{'video_format': '3d', 'moviename': 'Avengers', 'city': 'atlanta'}
+TP : {('moviename', 'Avengers'), ('video_format', '3d'), ('city', 'atlanta')} 
+FP : set() 
+FN : set() 
+
+target :{'city': 'nyc'}
+prediction :{'city': 'nyc'}
+TP : {('city', 'nyc')} 
+FP : set() 
+FN : set() 
+
+target :{'moviename': 'DeadPool'}
+prediction :{'moviename': 'DeadPool'}
+TP : {('moviename', 'DeadPool')} 
+FP : set() 
+FN : set() 
+
+target :{'starttime': 'DONT CARE'}
+prediction :{'theater': 'any'}
+TP : set() 
+FP : {('theater', 'any')} 
+FN : {('starttime', 'DONT CARE')} 
+
+target :{'starttime': '4.00 pm', 'moviename': 'Antman', 'numberofpeople': '2'}
+prediction :{'numberofpeople': '2'}
+TP : {('numberofpeople', '2')} 
+FP : set() 
+FN : {('moviename', 'Antman'), ('starttime', '4.00 pm')} 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{'numberofpeople': '3', 'moviename': 'batman'}
+prediction :{'numberofpeople': '3', 'moviename': 'batman'}
+TP : {('numberofpeople', '3'), ('moviename', 'batman')} 
+FP : set() 
+FN : set() 
+
+target :{'numberofpeople': '7', 'moviename': 'magnificent', 'starttime': '8.00 pm'}
+prediction :{'numberofpeople': '7'}
+TP : {('numberofpeople', '7')} 
+FP : set() 
+FN : {('moviename', 'magnificent'), ('starttime', '8.00 pm')} 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{'distanceconstraints': 'me'}
+TP : set() 
+FP : {('distanceconstraints', 'me')} 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{'moviename': 'Black swan'}
+prediction :{'moviename': 'the Black swan'}
+TP : set() 
+FP : {('moviename', 'the Black swan')} 
+FN : {('moviename', 'Black swan')} 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{'moviename': 'bird box', 'city': 'portland'}
+prediction :{'theater': 'box', 'city': 'portland'}
+TP : {('city', 'portland')} 
+FP : {('theater', 'box')} 
+FN : {('moviename', 'bird box')} 
+
+target :{'moviename': 'quiet place', 'starttime': '12.00 pm', 'theater': 'los angeles'}
+prediction :{'theater': 'place', 'starttime': '12:00', 'city': 'los angeles'}
+TP : set() 
+FP : {('starttime', '12:00'), ('theater', 'place'), ('city', 'los angeles')} 
+FN : {('starttime', '12.00 pm'), ('moviename', 'quiet place'), ('theater', 'los angeles')} 
+
+target :{}
+prediction :{'critic_rating': 'nice'}
+TP : set() 
+FP : {('critic_rating', 'nice')} 
+FN : set() 
+
+target :{'theater': 'liberty'}
+prediction :{'state': 'liberty'}
+TP : set() 
+FP : {('state', 'liberty')} 
+FN : {('theater', 'liberty')} 
+
+target :{}
+prediction :{'critic_rating': 'good'}
+TP : set() 
+FP : {('critic_rating', 'good')} 
+FN : set() 
+
+target :{'starttime': '8.00 pm', 'date': 'tomorrow'}
+prediction :{'date': 'tomorrow'}
+TP : {('date', 'tomorrow')} 
+FP : set() 
+FN : {('starttime', '8.00 pm')} 
+
+target :{'starttime': 'DONT CARE'}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : {('starttime', 'DONT CARE')} 
+
+target :{'moviename': 'Dealpool', 'theater': 'liberty'}
+prediction :{'theater': 'liberty', 'moviename': 'Deadpool'}
+TP : {('theater', 'liberty')} 
+FP : {('moviename', 'Deadpool')} 
+FN : {('moviename', 'Dealpool')} 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{'critic_rating': 'Good'}
+TP : set() 
+FP : {('critic_rating', 'Good')} 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{'genre': 'horror', 'city': 'san francisco'}
+prediction :{'genre': 'horror', 'city': 'san francisco'}
+TP : {('city', 'san francisco'), ('genre', 'horror')} 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{'distanceconstraints': 'time'}
+TP : set() 
+FP : {('distanceconstraints', 'time')} 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{'video_format': '3d'}
+prediction :{'video_format': '3d'}
+TP : {('video_format', '3d')} 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{'numberofpeople': '2', 'theater': 'emagine'}
+prediction :{'numberofpeople': '2', 'theater': 'emagine'}
+TP : {('numberofpeople', '2'), ('theater', 'emagine')} 
+FP : set() 
+FN : set() 
+
+target :{'date': 'tomorrow'}
+prediction :{'date': 'tomorrow'}
+TP : {('date', 'tomorrow')} 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{'starttime': '4 p.m.'}
+prediction :{'numberofpeople': '4'}
+TP : set() 
+FP : {('numberofpeople', '4')} 
+FN : {('starttime', '4 p.m.')} 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{}
+TP : set() 
+FP : set() 
+FN : set() 
+
+target :{}
+prediction :{'genre': 'kids'}
+TP : set() 
+FP : {('genre', 'kids')} 
+FN : set() 
+
+target :{'moviename': 'avengers'}
+prediction :{'moviename': 'avengers'}
+TP : {('moviename', 'avengers')} 
+FP : set() 
+FN : set() 
+

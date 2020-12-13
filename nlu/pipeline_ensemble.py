@@ -145,7 +145,7 @@ def test_stack_pipelines(
 ):
     model_folder_path = "stack_models\pipelines"
     model_score_path = "results\pipelines"
-    entity_out_file_path = "results\\stack_reports\\full_entity_result10.csv"
+    entity_out_file_path = "results\\stack_reports\\full_entity_result11.csv"
 
     target_entities = [{'theater': 'liberty'}, {'numberofpeople': '4', 'date': 'tomorrow'}, {'moviename': 'infinity war', 'starttime': '4.30 p.m.'}, {'numberofpeople': '3', 'moviename': 'Zootopia'}, {'genre': 'comedy', 'city': 'nyc'}, {'moviename': 'Deadpool ', 'city': 'hamilton'}, {'numberofpeople': '3', 'moviename': 'batman'}, {'moviename': 'zootopis'}, {'moviename': 'batman vs superman'}, {}, {'theater': 'amc pacific place 11'}, {'moviename': "brother's grimsby", 'theater': 'emagine ', 'city': 'Portland'}, {'numberofpeople': '4', 'city': 'chicago'}, {'moviename': 'Foxtrot', 'city': 'seattle'}, {'city': 'nyc'}, {'city': 'san francisco'}, {'moviename': 'batman', 'city': 'miami'}, {'city': 'dallas'}, {}, {'starttime': '10'}, {'genre': 'action', 'date': 'tomorrow'}, {'starttime': 'before 12pm'}, {}, {}, {}, {}, {'video_format': '3d', 'moviename': 'Avengers', 'city': 'atlanta'}, {'city': 'nyc'}, {'moviename': 'DeadPool'}, {'starttime': 'DONT CARE'}, {'starttime': '4.00 pm', 'moviename': 'Antman', 'numberofpeople': '2'}, {}, {'numberofpeople': '3', 'moviename': 'batman'}, {'numberofpeople': '7', 'moviename': 'magnificent', 'starttime': '8.00 pm'}, {}, {}, {}, {}, {'moviename': 'Black swan'}, {}, {}, {'moviename': 'bird box', 'city': 'portland'}, {'moviename': 'quiet place', 'starttime': '12.00 pm', 'theater': 'los angeles'}, {}, {'theater': 'liberty'}, {}, {'starttime': '8.00 pm', 'date': 'tomorrow'}, {'starttime': 'DONT CARE'}, {'moviename': 'Dealpool', 'theater': 'liberty'}, {}, {}, {}, {}, {}, {}, {}, {}, {'genre': 'horror', 'city': 'san francisco'}, {}, {}, {'video_format': '3d'}, {}, {'numberofpeople': '2', 'theater': 'emagine'}, {'date': 'tomorrow'}, {}, {'starttime': '4 p.m.'}, {}, {}, {}, {'moviename': 'avengers'}]
 
@@ -329,7 +329,7 @@ def model_stack_predict(
                         confidence_entity = 0
                     else:
                         print("@@@@@@@@@@@@@@@@@@@@@@@@")
-                        confidence_entity = 0.7
+                        confidence_entity = 0.9
 
                 if not stack_entities:
                     entity["count"] = confidence_entity
@@ -360,17 +360,17 @@ def model_stack_predict(
             entity_out_file.write("stack_entities before trim :"+str(initial_stack_entities)+"\n")
 
         for num, i in enumerate(stack_entities):
-            # if value_added_scores:
-            #     if  i["count"]<25:
-            #         stack_entities.remove(i)
-            #         break
+            if value_added_scores:
+                if  i["count"]<25:
+                    stack_entities.remove(i)
+                    break
             if  i["count"]<4:
                 stack_entities.remove(i)
                 if entity_file_exist:
                     entity_out_file.write("remove {} with count {}".format(i["entity"],i["count"])+"\n")
                 continue
-            elif num > (len(stack_entities) - 1):
-                break
+            # elif num > (len(stack_entities) - 1):
+            #     break
             for j in stack_entities[num + 1 :]:
                 if i["entity"] == j["entity"]:
                     low_entity = i if i["count"] < j["count"] else j
